@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import { Suspense } from 'react';
 
 import { fetchInvoicesPages } from '@/app/lib/data';
@@ -7,6 +8,14 @@ import Pagination from '@/app/ui/invoices/pagination';
 import Table from '@/app/ui/invoices/table';
 import Search from '@/app/ui/search';
 import { InvoicesTableSkeleton } from '@/app/ui/skeletons';
+
+// export const metadata: Metadata = {
+//   title: "Invoices | Acme Dashboard"
+// };
+
+export const metadata: Metadata = {
+  title: 'Invoices'
+};
 
 type SearchParams = {
   searchParams?: {
